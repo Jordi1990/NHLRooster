@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_about">Over de NHL Rooster App</string>
+    <string name="navigation_drawer_close">Sluit navigatie scherm</string>
+    <string name="navigation_drawer_open">Open navigatie scherm</string>
+    <string name="fetching_department">Afdelingen ophalen...</string>
+    <string name="about_message">Dit is een onofficiële rooster applicatie voor de NHL.\n\n\nDeze app is gemaakt door:\nJordi Epema\n\nBuild:</string>
+    <string name="error_nonetwork">Kan de rooster server niet bereiken, er is geen lokale kopie beschikbaar om te vertonen.</string>
+    <string name="error_nodepartmentorclass">Zoek eerst een klas/docent waarvan je het rooster wilt zien.</string>
+    <string name="error_invaliddata">Er is een fout opgetreden tijdens het ophalen van het rooster</string>
+    <string name="updatedon">Bijgewerkt op</string>
+    <string name="error_nolessons">Geen lessen</string>
+    <string name="error">Melding</string>
+    <string name="notification_title">Rooster wijziging</string>
+    <string name="notification_message">Het rooster van ?? is gewijzigd, klik hier om het gewijzigde rooster te bekijken</string>
+    <string name="action_settings">Instellingen</string>
+    <string name="pref_summary_push_notification">Ontvang een push melding bij een rooster wijziging</string>
+    <string name="pref_title_push_notification">Melding bij roosterwijzigingen</string>
+    <string name="pref_title_nr_of_fragments">Aantal roosters</string>
+    <string name="pref_summary_nr_of_fragments">Totaal aantal weken aan roosters die zichtbaar zijn(een lagere waarde kan de app sneller maken)</string>
+    <string name="pref_title_clear_cache">Opruimen</string>
+    <string name="pref_summary_clear_cache">Verwijder alle rooster cache bestanden</string>
+    <string name="cache_cleared">Cache opgeruimd</string>
+    <string name="searchQueryHint">Zoek naar klas of docent</string>
+    <string name="app_name">NHL Rooster</string>
+    <string name="authorName">Ontwikkeld door: Jordi Epema</string>
+    <string name="teacher">Docent</string>
+    <string name="exam">Tentamen</string>
+    <string name="error_nonetwork_cache" >De rooster server is onbereikbaar, een lokaal opgeslagen kopie wordt vertoond.</string>
+    <string name="year">Jaar</string>
+    <string name="action_changes">Laatste rooster wijzigingen</string>
+    <string name="no_changes">Er zijn geen rooster wijzigingen beschikbaar op dit moment</string>
+    <string name="google_app_id">1039794065372</string>
+<<<<<<< HEAD
+    <string name="action_home">Rooster</string>
+=======
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+</resources>

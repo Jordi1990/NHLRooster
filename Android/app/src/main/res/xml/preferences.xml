@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <CheckBoxPreference
+        android:key="pref_key_push_notification"
+        android:summary="@string/pref_summary_push_notification"
+        android:title="@string/pref_title_push_notification"
+        android:defaultValue="true" />
+    <EditTextPreference
+        android:key="pref_key_nr_of_fragments"
+        android:summary="@string/pref_summary_nr_of_fragments"
+        android:title="@string/pref_title_nr_of_fragments"
+        android:defaultValue="10"
+        android:textColor="#000000"
+        android:inputType="number"/>
+    <Preference
+        android:title="@string/pref_title_clear_cache"
+        android:summary="@string/pref_summary_clear_cache"
+        android:key="pref_key_clear_cache"/>
+</PreferenceScreen>

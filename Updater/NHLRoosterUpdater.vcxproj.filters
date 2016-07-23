@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\odb">
+      <UniqueIdentifier>{d313b24f-cd13-415e-a960-e292d28dd170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\odb">
+      <UniqueIdentifier>{07f31723-fc0c-461e-a0bb-28b56c7946e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\json_spirit">
+      <UniqueIdentifier>{ea336094-b48f-4591-bba0-6b060c0a2dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\rapidxml">
+      <UniqueIdentifier>{118dd9f2-96df-4fbe-ab3d-0a341323a7b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\json_spirit">
+      <UniqueIdentifier>{2c77b903-1109-41eb-a27a-3db4eb295566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\database">
+      <UniqueIdentifier>{33102871-5a37-4b65-8c51-f11dc93d5aa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gumbo">
+      <UniqueIdentifier>{52a07530-b280-47ae-8cf4-5c36d2c13f19}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="NHLRoosterUpdater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="include\Class-odb.cxx">
+      <Filter>Source Files\odb</Filter>
+    </ClCompile>
+    <ClCompile Include="include\department-odb.cxx">
+      <Filter>Source Files\odb</Filter>
+    </ClCompile>
+    <ClCompile Include="include\lesson-odb.cxx">
+      <Filter>Source Files\odb</Filter>
+    </ClCompile>
+    <ClCompile Include="include\pushClients-odb.cxx">
+      <Filter>Source Files\odb</Filter>
+    </ClCompile>
+    <ClCompile Include="include\json_spirit\json_spirit_reader.cpp">
+      <Filter>Source Files\json_spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="include\json_spirit\json_spirit_value.cpp">
+      <Filter>Source Files\json_spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="include\json_spirit\json_spirit_writer.cpp">
+      <Filter>Source Files\json_spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="fetch_data.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gcm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database_actions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\attribute.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\char_ref.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\error.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\parser.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\string_buffer.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\string_piece.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\tag.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\tokenizer.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\utf8.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\util.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\vector.c">
+      <Filter>Source Files\gumbo</Filter>
+    </ClCompile>
+    <ClCompile Include="include\ChangeItem-odb.cxx">
+      <Filter>Source Files\odb</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Class-odb.hxx">
+      <Filter>Header Files\odb</Filter>
+    </ClInclude>
+    <ClInclude Include="include\department-odb.hxx">
+      <Filter>Header Files\odb</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lesson-odb.hxx">
+      <Filter>Header Files\odb</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pushClients-odb.hxx">
+      <Filter>Header Files\odb</Filter>
+    </ClInclude>
+    <ClInclude Include="NHLRoosterUpdater.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_error_position.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_reader.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_stream_reader.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_reader_template.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_utils.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_value.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_writer.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_writer_options.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\json_spirit\json_spirit_writer_template.h">
+      <Filter>Header Files\json_spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rapidxml_iterators.hpp">
+      <Filter>Header Files\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rapidxml.hpp">
+      <Filter>Header Files\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rapidxml_utils.hpp">
+      <Filter>Header Files\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rapidxml_print.hpp">
+      <Filter>Header Files\rapidxml</Filter>
+    </ClInclude>
+    <ClInclude Include="include\includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Class.h">
+      <Filter>Header Files\database</Filter>
+    </ClInclude>
+    <ClInclude Include="include\department.h">
+      <Filter>Header Files\database</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Lesson.h">
+      <Filter>Header Files\database</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pushClients.h">
+      <Filter>Header Files\database</Filter>
+    </ClInclude>
+    <ClInclude Include="include\variables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ThreadSafeObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ChangeItem.h">
+      <Filter>Header Files\database</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ChangeItem-odb.hxx">
+      <Filter>Header Files\odb</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

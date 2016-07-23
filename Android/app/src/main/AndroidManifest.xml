@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="jordi.nhlrooster" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission android:name="jordi.nhlrooster.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="jordi.nhlrooster.permission.C2D_MESSAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateVisible|adjustPan">
+        <activity android:label="@string/app_name" android:name=".Activities.SettingsActivity" android:theme="@style/SettingsTheme"/>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="jordi.nhlrooster" />
+            </intent-filter>
+        </receiver>
+        <service
+<<<<<<< HEAD
+            android:name="jordi.nhlrooster.Services.GcmIntentService"
+=======
+            android:name="jordi.nhlrooster.GcmIntentService"
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+<<<<<<< HEAD
+            android:name="jordi.nhlrooster.Services.MyInstanceIDListenerService"
+=======
+            android:name="jordi.nhlrooster.MyInstanceIDListenerService"
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service
+<<<<<<< HEAD
+            android:name="jordi.nhlrooster.Services.RegistrationIntentService"
+=======
+            android:name="jordi.nhlrooster.RegistrationIntentService"
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+            android:exported="false">
+        </service>
+    </application>
+
+</manifest>

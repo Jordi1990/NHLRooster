@@ -1,0 +1,10 @@
+Dependencies:
+curl
+odb
+odb-mysql
+pthread
+boost_date_time
+gumbo
+
+Example build command:
+g++ -m64 NHLRoosterUpdater.cpp helper.cpp fetch_data.cpp database_actions.cpp gcm.cpp -L/home/jordi -I/home/jordi/cppconn/include/ -Iinclude/ -Iinclude/gumbo-parser-0.10.1/src/ src/Class.cpp include/Class-odb.cxx include/department-odb.cxx include/Lesson-odb.cxx include/pushClients-odb.cxx include/json_spirit/json_spirit_reader.cpp include/json_spirit/json_spirit_value.cpp include/json_spirit/json_spirit_writer.cpp -std=c++11 -lcurl -lodb -lodb-mysql -lpthread -lboost_date_time -lgumbo -o NHLRoosterUpdater_LINUX

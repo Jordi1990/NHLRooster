@@ -1,0 +1,47 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#2c4359</item>
+        <item name="colorPrimaryDark">#2c4359</item>
+        <item name="colorAccent">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorPrimaryInverse">#ffffff</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:actionMenuTextColor">#ffffff</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+        <item name="android:autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="actionModeBackground">@drawable/action_mode_bg</item>
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+    <style name="cursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="SettingsTheme" parent="AppBaseTheme">
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#2a2a2a</item>
+        <item name="colorAccent">#2c4359</item>
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:width="250dp"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:text=""
+        android:width="250dp"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textStyle="italic"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/teacher"
+        android:layout_width="wrap_content"
+        android:width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:textColor="#343434"
+        android:textSize="12sp"
+        android:layout_marginTop="10dip"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:gravity="end"
+        android:text=""
+        android:layout_marginRight="5dip"
+        android:textSize="12sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/time"
+        android:gravity="end"
+        android:text=""
+        android:layout_marginRight="5dip"
+        android:textSize="12sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacher"
+        android:progress="0"
+        android:visibility="gone"
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"/>
+
+</RelativeLayout>

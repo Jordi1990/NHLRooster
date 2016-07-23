@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_about">About the NHL Rooster App</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="fetching_department">Loading departments...</string>
+    <string name="about_message">This is an unofficial schedule application for the NHL.\n\n\nThis app has been developed by:\nJordi Epema\n\nBuild:</string>
+    <string name="error_nonetwork">Cannot reach the server, no local copy available to display</string>
+    <string name="error_nodepartmentorclass">Search a class/teacher</string>
+    <string name="error_invaliddata">An error occurred while retrieving the schedule</string>
+    <string name="updatedon">Updated on</string>
+    <string name="error_nolessons">No lessons</string>
+    <string name="error">Error</string>
+    <string name="notification_title">Schedule changed</string>
+    <string name="notification_message">The schedule of ?? has been changed, click here to view the new schedule</string>
+    <string name="action_settings">Settings</string>
+    <string name="pref_title_push_notification">Schedule change notification</string>
+    <string name="pref_summary_push_notification">Receive push notifications when the schedule of your class changes</string>
+    <string name="pref_summary_nr_of_fragments">Total amount of weeks of which the schedule will be fetched(lower value equals higher responsiveness)</string>
+    <string name="pref_title_nr_of_fragments">Amount of schedules</string>
+    <string name="pref_title_clear_cache">Clear cache</string>
+    <string name="pref_summary_clear_cache">Clear all the cached schedule files</string>
+    <string name="cache_cleared">Cache cleaned</string>
+    <string name="searchQueryHint">Search class or teacher</string>
+    <string name="authorName">Developed by: Jordi Epema</string>
+    <string name="app_name">NHL Rooster</string>
+    <string name="teacher">Teacher</string>
+    <string name="exam">Exam</string>
+    <string name="error_nonetwork_cache" >The server is unavailable, a local copy will be displayed.</string>
+    <string name="year">Year</string>
+    <string name="action_changes">Latest schedule changes</string>
+    <string name="no_changes">There are no schedule changes known at this time</string>
+    <string name="google_app_id">1039794065372</string>
+<<<<<<< HEAD
+    <string name="action_home">Schedule</string>
+=======
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+</resources>

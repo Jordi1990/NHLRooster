@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape >
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <item android:bottom="0.8dp"
+        android:left="0.8dp"
+        android:right="0.8dp">
+        <shape >
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+
+    <!-- draw another block to cut-off the left and right bars -->
+    <item android:bottom="2.0dp">
+        <shape >
+            <solid android:color="#2c4359" />
+        </shape>
+    </item>
+</layer-list>

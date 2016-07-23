@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{500876C6-CDBC-4CE5-8EDC-F84A508EF7FB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>NHLRoosterUpdater</RootNamespace>
+    <TargetPlatformVersion>8</TargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);E:\boost_1_58_0\lib32-msvc-12.0;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);D:\oldData\boost_1_58_0\lib32-msvc-12.0;D:\boost_1_59_0\lib32-msvc-14.0</LibraryPath>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\jor_e\Downloads\libical-master\libical-master\build\src\;C:\Users\jor_e\Downloads\libical-master\libical-master\src\libical;C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src;C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\visualc\include</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include/;C:\Users\Jordi\Downloads\libodb-2.4.0;C:\Users\Jordi\Downloads\libodb-mysql-2.4.0;C:\Program Files (x86)\MySQL\MySQL Connector C++ 1.1.5\include;C:\Users\Jordi\Downloads\curl-7.42.1\curl-7.42.1\builds\libcurl-vc12-x86-release-dll-sspi-winssl\include;C:\Program Files (x86)\MySQL\MySQL Connector C 6.1\include;E:\boost_1_58_0\boost_1_58_0</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4068</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>C:\Users\Jordi\Downloads\libodb-2.4.0\lib\odb.lib;C:\Users\Jordi\Downloads\libodb-mysql-2.4.0\lib\odb-mysql.lib;C:\Users\Jordi\Downloads\curl-7.42.1\curl-7.42.1\builds\libcurl-vc12-x86-release-dll-sspi-winssl\lib\libcurl.lib;C:\Program Files (x86)\MySQL\MySQL Connector C 6.1\lib\libmysql.lib;C:\Program Files (x86)\MySQL\MySQL Connector C++ 1.1.5\lib\debug\mysqlcppconn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include/;D:\Code\NHLRoosterUpdaterDependencies\libodb-2.4.0;D:\Code\NHLRoosterUpdaterDependencies\libodb-mysql-2.4.0;C:\Program Files (x86)\MySQL\MySQL Connector C++ 1.1.6\include;D:\Code\NHLRoosterUpdaterDependencies\curl-7.42.1\curl-7.42.1\builds\libcurl-vc12-x86-release-dll-sspi-winssl\include;C:\Program Files (x86)\MySQL\MySQL Connector C 6.1\include;D:\boost_1_59_0\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>D:\Code\NHLRoosterUpdaterDependencies\libodb-2.4.0\lib\odb.lib;D:\Code\NHLRoosterUpdaterDependencies\libodb-mysql-2.4.0\lib\odb-mysql.lib;D:\Code\NHLRoosterUpdaterDependencies\curl-7.42.1\curl-7.42.1\builds\libcurl-vc12-x86-release-dll-sspi-winssl\lib\libcurl.lib;C:\Program Files (x86)\MySQL\MySQL Connector C 6.1\lib\libmysql.lib;C:\Program Files (x86)\MySQL\MySQL Connector C++ 1.1.6\lib\opt\mysqlcppconn.lib;C:\Users\jor_e\Downloads\libical-master\libical-master\build\bin\libical.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>odb --database mysql --generate-query --generate schema Class.h department.h lesson.h pushClients.h</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\attribute.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\char_ref.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\error.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\parser.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\string_buffer.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\string_piece.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\tag.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\tokenizer.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\utf8.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\util.c" />
+    <ClCompile Include="C:\Users\jor_e\Downloads\gumbo-parser-0.10.1\gumbo-parser-0.10.1\src\vector.c" />
+    <ClCompile Include="database_actions.cpp" />
+    <ClCompile Include="fetch_data.cpp" />
+    <ClCompile Include="gcm.cpp" />
+    <ClCompile Include="helper.cpp" />
+    <ClCompile Include="include\ChangeItem-odb.cxx" />
+    <ClCompile Include="include\Class-odb.cxx" />
+    <ClCompile Include="include\department-odb.cxx" />
+    <ClCompile Include="include\json_spirit\json_spirit_reader.cpp" />
+    <ClCompile Include="include\json_spirit\json_spirit_value.cpp" />
+    <ClCompile Include="include\json_spirit\json_spirit_writer.cpp" />
+    <ClCompile Include="include\lesson-odb.cxx" />
+    <ClCompile Include="include\pushClients-odb.cxx" />
+    <ClCompile Include="NHLRoosterUpdater.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ChangeItem-odb.hxx" />
+    <ClInclude Include="include\ChangeItem.h" />
+    <ClInclude Include="include\Class-odb.hxx" />
+    <ClInclude Include="include\Class.h" />
+    <ClInclude Include="include\department-odb.hxx" />
+    <ClInclude Include="include\department.h" />
+    <ClInclude Include="include\includes.h" />
+    <ClInclude Include="include\json_spirit\json_spirit.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_error_position.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_reader.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_reader_template.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_stream_reader.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_utils.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_value.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_writer.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_writer_options.h" />
+    <ClInclude Include="include\json_spirit\json_spirit_writer_template.h" />
+    <ClInclude Include="include\lesson-odb.hxx" />
+    <ClInclude Include="include\Lesson.h" />
+    <ClInclude Include="include\pushClients-odb.hxx" />
+    <ClInclude Include="include\pushClients.h" />
+    <ClInclude Include="include\rapidxml.hpp" />
+    <ClInclude Include="include\rapidxml_iterators.hpp" />
+    <ClInclude Include="include\rapidxml_print.hpp" />
+    <ClInclude Include="include\rapidxml_utils.hpp" />
+    <ClInclude Include="include\ThreadSafeObject.h" />
+    <ClInclude Include="include\variables.h" />
+    <ClInclude Include="NHLRoosterUpdater.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

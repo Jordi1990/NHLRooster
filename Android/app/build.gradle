@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+def getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMdd')
+    return formattedDate
+}
+
+android {
+<<<<<<< HEAD
+    compileSdkVersion 24
+=======
+    compileSdkVersion 23
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+    buildToolsVersion '23.0.3'
+
+    defaultConfig {
+        applicationId "jordi.nhlrooster"
+        minSdkVersion 14
+<<<<<<< HEAD
+        targetSdkVersion 24
+        versionCode 23
+=======
+        targetSdkVersion 23
+        versionCode 22
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+        versionName getDate()
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    allprojects {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xlint:deprecation"
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+<<<<<<< HEAD
+    compile 'com.android.support:appcompat-v7:24.1.0'
+    compile 'com.google.android.gms:play-services-gcm:9.2.1'
+    compile 'com.android.support:recyclerview-v7:24.1.0'
+    compile 'com.android.support:cardview-v7:24.1.0'
+=======
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+>>>>>>> 8f31076d2163ca7f10a25dc608e878be24b76254
+}
